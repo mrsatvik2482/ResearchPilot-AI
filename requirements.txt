@@ -1,0 +1,12 @@
+# ResearchPilot AI — local-first dependencies (no cloud services, no API keys)
+# Install with:  pip install -r requirements.txt
+streamlit>=1.36
+torch>=2.2,<2.8  # 2.8+ has DLL-init failures on some Windows machines; 2.7.x is stable
+pymupdf>=1.24,<2  # 2.0.0 segfaults on some Windows setups; stay on stable 1.x
+sentence-transformers>=3.0
+faiss-cpu>=1.8.0
+langgraph>=0.2
+requests>=2.31
+numpy>=1.24
+pandas>=2.0
+pytest>=8.0
